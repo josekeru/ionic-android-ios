@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13C64" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Dias" representedClassName="Dias" syncable="YES">
+        <attribute name="nombreDia" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ordenDia" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="hermandades" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Hermandades" inverseName="dias" inverseEntity="Hermandades" syncable="YES"/>
+    </entity>
+    <entity name="Hermandades" representedClassName="Hermandades" syncable="YES">
+        <attribute name="bandaH" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="capatazH" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descripcionH" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagenH" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreH" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numeroH" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="dias" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Dias" inverseName="hermandades" inverseEntity="Dias" syncable="YES"/>
+        <relationship name="recorridos" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Recorrido" inverseName="hermandadesD" inverseEntity="Recorrido" syncable="YES"/>
+    </entity>
+    <entity name="Publicidad" syncable="YES">
+        <attribute name="nivel" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="peso" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="texto" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Recorrido" syncable="YES">
+        <attribute name="hora" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lugar" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="hermandadesD" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Hermandades" inverseName="recorridos" inverseEntity="Hermandades" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Dias" positionX="-522" positionY="56" width="128" height="88"/>
+        <element name="Hermandades" positionX="-758" positionY="315" width="128" height="163"/>
+        <element name="Recorrido" positionX="-965" positionY="207" width="128" height="88"/>
+        <element name="Publicidad" positionX="-441" positionY="198" width="128" height="90"/>
+    </elements>
+</model>

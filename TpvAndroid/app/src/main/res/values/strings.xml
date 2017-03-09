@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Restaurante en construccion</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_mesas">Mesas</string>
+    <string name="title_activity_comandas">Comandas</string>
+    <string name="tab_interior">Interior</string>
+    <string name="tab_terraza">Terraza</string>
+    <string name="cargando">Cargando Datos</string>
+    <string name="usuario">Usuario</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+
+
+    <string-array name="familias">
+        <item>@drawable/cafeseinfusiones</item>
+        <item>@drawable/frefrescos</item>
+        <item>@drawable/fcervezas</item>
+        <item>@drawable/fvinos</item>
+        <item>@drawable/flicores</item>
+        <item>@drawable/bebidasalcoholicas</item>
+        <item>@drawable/entrantes</item>
+        <item>@drawable/fcarnes</item>
+        <item>@drawable/fespeciales</item>
+        <item>@drawable/fvarios</item>
+        <item>@drawable/huevosytortillas</item>
+        <item>@drawable/postres</item>
+        <item>@drawable/paellas</item>
+        <item>@drawable/desayunos</item>
+        <item>@drawable/pescadomotril</item>
+        <item>@drawable/pescadogaliciacantabrico</item>
+        <item>@drawable/sopas</item>
+        <item>@drawable/tapas</item>
+    </string-array>
+
+
+
+</resources>

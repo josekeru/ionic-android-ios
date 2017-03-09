@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:background="@drawable/fondocomanda">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutCuenta"
+        android:layout_weight="1.4"
+        android:visibility="gone">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvPedidos"
+            android:transcriptMode="alwaysScroll"
+            android:stackFromBottom="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/lFamilias"
+        android:visibility="visible">
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gridView2"
+            android:numColumns="5"
+            android:choiceMode="multipleChoice"
+            android:layout_margin="7dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/ivSeparador"
+        android:background="@drawable/separador"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:id="@+id/layoutProductos">
+
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gridView3"
+            android:choiceMode="multipleChoice"
+            android:numColumns="5"
+            android:layout_margin="7dp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutBotones"
+        android:visibility="gone">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/btPedido"
+            android:background="@drawable/pedido2"
+            android:layout_marginLeft="410dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:onClick="mostrar" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/btComanda"
+            android:background="@drawable/comandas"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible"
+            android:onClick="mandarPedido" />
+
+    </LinearLayout>
+
+</LinearLayout>
